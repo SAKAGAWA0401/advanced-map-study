@@ -557,7 +557,6 @@ map.on('load', () => {
       </a>
       `
   })
-  console.log("API Key:", import.meta.env.VITE_MAPTILER_API_KEY);
 
   map.addLayer(
     {
