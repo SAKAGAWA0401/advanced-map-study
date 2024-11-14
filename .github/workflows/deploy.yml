@@ -31,7 +31,7 @@ jobs:
 
       - name: Build project
         env:
-          VITE_MAPTILER_API_KEY: ${{ secrets.VITE_MAPTILER_API_KEY || '' }}
+          VITE_MAPTILER_API_KEY: ${{ secrets.VITE_MAPTILER_API_KEY }}
         run: npm run build
 
       - name: Deploy to GitHub Pages
