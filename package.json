@@ -1,0 +1,21 @@
+{
+  "name": "advanced-map-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10"
+  },
+  "dependencies": {
+    "@turf/distance": "^7.1.0",
+    "dotenv": "^16.4.5",
+    "maplibre-gl": "^4.7.1",
+    "maplibre-gl-gsi-terrain": "^2.0.1",
+    "maplibre-gl-opacity": "^1.7.0"
+  }
+}
