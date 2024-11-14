@@ -547,8 +547,6 @@ map.on('load', () => {
   });
 
   const apiKey = import.meta.env.VITE_MAPTILER_API_KEY;
-  console.log("API Key:", import.meta.env.VITE_MAPTILER_API_KEY);
-
   map.addSource('terrain', {
     type: 'raster-dem',
     tiles: [`https://api.maptiler.com/tiles/terrain-rgb-v2/{z}/{x}/{y}.webp?key=${apiKey}`],
@@ -559,6 +557,8 @@ map.on('load', () => {
       </a>
       `
   })
+  console.log("API Key:", import.meta.env.VITE_MAPTILER_API_KEY);
+
   map.addLayer(
     {
       id: 'hillshade-layer',
