@@ -547,6 +547,7 @@ map.on('load', () => {
   });
 
   const apiKey = import.meta.env.VITE_MAPTILER_API_KEY;
+  console.log("API Key:", import.meta.env.VITE_MAPTILER_API_KEY);
 
   map.addSource('terrain', {
     type: 'raster-dem',
