@@ -380,13 +380,6 @@ const getCurrentSkhbLayerFilter = () => {
   return visibleSkhbLayer[0].filter;
 }
 
-/*
-2点間の距離計算方法
-const point1 = [140, 40]
-const point2 = [138, 38]
-const dist = distance(point1, point2, { units: 'kilometers' });
-*/
-
 //経緯度から最寄りの避難所を返す関数
 const getNearestFeature = (longitude, latitude) => {
   const getCurrentSkhbLayerFilter = getCurrentSkhbLayerFilter();
