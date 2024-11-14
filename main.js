@@ -547,6 +547,7 @@ map.on('load', () => {
   });
 
   const apiKey = import.meta.env.VITE_MAPTILER_API_KEY;
+  console.log(apiKey);
   map.addSource('terrain', {
     type: 'raster-dem',
     tiles: [`https://api.maptiler.com/tiles/terrain-rgb-v2/{z}/{x}/{y}.webp?key=${apiKey}`],
