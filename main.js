@@ -552,7 +552,7 @@ map.on('load', () => {
     maxzoom: 12,
     attribution: `
       <a href="https://maptiler.com/" target="_blank">
-        <img src="./public/maptiler-logo.png" alt="MapTiler logo" style="width: 60px; vertical-align: middle;">
+        <img src="/maptiler-logo.png" alt="MapTiler logo" style="width: 60px; vertical-align: middle;">
       </a>
       `
   })
