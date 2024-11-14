@@ -93,10 +93,7 @@ const map = new maplibregl.Map({
       skhb: {
         type: 'vector',
         tiles: [
-            `${location.href.replace(
-                '/index.html',
-                '',
-            )}/skhb/{z}/{x}/{y}.pbf`,
+            `${location.origin}/skhb/{z}/{x}/{y}.pbf`,
         ],
         minzoom: 5,
         maxzoom: 8,
