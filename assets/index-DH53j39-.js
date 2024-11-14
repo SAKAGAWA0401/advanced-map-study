@@ -581,4 +581,4 @@ uniform ${T} ${S} u_${M};
       <a href="https://maptiler.com/" target="_blank">
         <img src="/maptiler-logo.png" alt="MapTiler logo" style="width: 60px; vertical-align: middle;">
       </a>
-      `}),console.log("API Key:",""),Qt.addLayer({id:"hillshade-layer",type:"hillshade",source:"terrain",paint:{"hillshade-illumination-anchor":"map","hillshade-exaggeration":.2}},"hazard_jisuberi-layer"),Qt.addControl(new Yl.TerrainControl({source:"terrain",exaggeration:1}),"top-right")});
+      `}),Qt.addLayer({id:"hillshade-layer",type:"hillshade",source:"terrain",paint:{"hillshade-illumination-anchor":"map","hillshade-exaggeration":.2}},"hazard_jisuberi-layer"),Qt.addControl(new Yl.TerrainControl({source:"terrain",exaggeration:1}),"top-right")});
