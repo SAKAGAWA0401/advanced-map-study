@@ -546,9 +546,11 @@ map.on('load', () => {
     }); // 位置情報が取得できている場合はデータを更新して作成
   });
 
+  const apiKey = import.meta.env.VITE_MAPTILER_API_KEY;
+
   map.addSource('terrain', {
     type: 'raster-dem',
-    tiles: [`https://api.maptiler.com/tiles/terrain-rgb-v2/{z}/{x}/{y}.webp?key=${process.env.MAPTILER_API_KEY}`],
+    tiles: [`https://api.maptiler.com/tiles/terrain-rgb-v2/{z}/{x}/{y}.webp?key=${apiKey}`],
     maxzoom: 12,
     attribution: `
       <a href="https://maptiler.com/" target="_blank">
